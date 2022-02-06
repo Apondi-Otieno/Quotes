@@ -13,18 +13,18 @@ export class QuotesComponent implements OnInit {
   }
 
   quote: Quotes[] = [
-    new Quotes(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son', new Date(2000, 1, 1)),
-    new Quotes(2, 'Buy Cookies', 'I have to buy cookies for the parrot', new Date(2000, 1, 1)),
-    new Quotes(3, 'Get new Phone Case', 'Diana has her birthday coming up soon', new Date(2000, 1, 1)),
-    new Quotes(4, 'Get Dog Food', 'Pupper likes expensive snacks', new Date(2000, 1, 1)),
-    new Quotes(5, 'Solve math homework', 'Damn Math', new Date(2000, 1, 1)),
-    new Quotes(6, 'Plot my world domination plan', 'Cause I am an evil overlord', new Date(2000, 1, 1)),
-    new Quotes(7, 'Watch finding Nemo', 'Find an online version and watch merlin find his son', new Date(2000, 1, 1)),
-    new Quotes(8, 'Buy Cookies', 'I have to buy cookies for the parrot', new Date(2000, 1, 1)),
-    new Quotes(9, 'Get new Phone Case', 'Diana has her birthday coming up soon', new Date(2000, 1, 1)),
-    new Quotes(10, 'Get Dog Food', 'Pupper likes expensive snacks', new Date(2000, 1, 1)),
-    new Quotes(11, 'Solve math homework', 'Damn Math', new Date(2000, 1, 1)),
-    new Quotes(12, 'Plot my world domination plan', 'Cause I am an evil overlord', new Date(2000, 1, 1)),
+    new Quotes(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son', new Date),
+    new Quotes(2, 'Buy Cookies', 'I have to buy cookies for the parrot', new Date),
+    new Quotes(3, 'Get new Phone Case', 'Diana has her birthday coming up soon', new Date),
+    new Quotes(4, 'Get Dog Food', 'Pupper likes expensive snacks', new Date),
+    new Quotes(5, 'Solve math homework', 'Damn Math', new Date),
+    new Quotes(6, 'Plot my world domination plan', 'Cause I am an evil overlord', new Date),
+    new Quotes(7, 'Watch finding Nemo', 'Find an online version and watch merlin find his son', new Date),
+    new Quotes(8, 'Buy Cookies', 'I have to buy cookies for the parrot', new Date),
+    new Quotes(9, 'Get new Phone Case', 'Diana has her birthday coming up soon', new Date),
+    new Quotes(10, 'Get Dog Food', 'Pupper likes expensive snacks', new Date),
+    new Quotes(11, 'Solve math homework', 'Damn Math', new Date),
+    new Quotes(12, 'Plot my world domination plan', 'Cause I am an evil overlord', new Date),
   ];
 
   toggleDetails(index :any){
