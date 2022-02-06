@@ -13,8 +13,9 @@ likeButtonClick(){
   this.numberOfLikes++;
 }
 
+numberOfDislikes :number =0;
 dislikeButtonClick(){
-  this.numberOfLikes--;
+  this.numberOfDislikes++;
 }
   ngOnInit(): void {
   }

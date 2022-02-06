@@ -13,7 +13,7 @@
         {{quote.name}}
         <br>
     <button (click)="toggleDetails(i)"> Info. </button>
-     <app-quote-detail *ngIf= 'quote.showDescription' [quote]= 'quote'(isComplete)='completeQuote($event,i)'></app-quote-detail>
+     <app-quote-detail *ngIf= 'quote.showDescription' [quote]= 'quote'(isComplete)='completeQuote($event,i)'> </app-quote-detail>
   
      </ol>
      <app-like></app-like>
