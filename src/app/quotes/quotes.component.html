@@ -3,18 +3,21 @@
     ******* like or dislike a vote and see number 
 -->
 
-
+<div class="container-fluid">
 <h2>Good quotes</h2>
+<div class="container">
 <div *ngFor='let quote of quote ; let i=index'>
 
 <ul>
     <ol >
         {{quote.name}}
-        
-    <button (click)="toggleDetails(i)"> Details </button>
+        <br>
+    <button (click)="toggleDetails(i)"> Info. </button>
      <app-quote-detail *ngIf= 'quote.showDescription' [quote]= 'quote'(isComplete)='completeQuote($event,i)'></app-quote-detail>
   
      </ol>
     <p *ngif= "quote.length>10"> Your quotes are too long!</p>
 </ul>
+</div>
+</div>
 </div>
