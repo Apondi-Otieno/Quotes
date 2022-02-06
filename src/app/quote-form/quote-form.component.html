@@ -1,12 +1,12 @@
 <div class="container" id="form">
   <h2 class="text-center">Add a quote</h2>
   <hr>
-  <form (ngSubmit)= 'submitQuote()' #quoteForm='ngForm'>
+  <form>
     <div class="form-group">
 
       <label for="name">Quote</label>
-      <textarea class="form-control" id="description" rows="4" [(ngModel)]="newQuote.description" name="description"
-        #description="ngModel" required></textarea>
+      <textarea class="form-control" id="description" rows="4" [(ngModel)]= "newQuote.name" name="description"
+        #name="ngModel" required></textarea>
       <!-- <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
           <p>Description is required</p>
 
@@ -16,8 +16,8 @@
     <div class="form-group">
 
       <label for="description">Author</label>
-      <input type="text" class="form-control" id="name" name="name" required [(ngModel)]="newQuote.name"
-        #name='ngModel'>
+      <input type="text" class="form-control" id="name" name="name" required [(ngModel)]= "newQuote.description"
+        #description='ngModel'>
       <br>
       <!-- <div [hidden]="name.valid || name.pristine" class="alert alert-danger"></div>
       <div class="alert alert-danger">
