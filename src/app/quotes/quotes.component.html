@@ -4,7 +4,7 @@
   <!-- Background image -->
   <div class="container text-center bg-image" style="
       background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
-      height: 50rem
+      height: 36rem
     ">
     <div class="mask">
       <div class="d-flex justify-content-center align-items-center h-100">
@@ -14,7 +14,7 @@
           <h4 id="text" class="mb-3">QUOTES</h4>
 
           <br><br>
-          <a class="btn btn-outline-light btn-lg" href="#!" role="button">Learn More</a>
+          <a class="btn btn-outline-light btn-lg" href="#!" role="button">Read Quotes</a>
 
         </div>
       </div>
@@ -27,7 +27,7 @@
 
 <div class="container-fluid">
   <br>
-  <h4>Quotes</h4>
+  <h4 id="text-quote">Quotes</h4>
   <div class="container">
 
     <div id="quote-text" *ngFor='let quote of quote ; let i=index'>
@@ -38,7 +38,7 @@
           <app-like></app-like>
         </ol>
       </ul>
-      <button (click)="toggleDetails(i)"> More Info. </button>
+      <button class="btn btn-primary" (click)="toggleDetails(i)"> More Info. </button>
 
       <app-quote-detail *ngIf= 'quote.showDescription' [quote]= 'quote' (isComplete)= 'completeQuote($event,i)'>
       </app-quote-detail>
