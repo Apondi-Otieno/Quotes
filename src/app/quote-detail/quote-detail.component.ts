@@ -11,10 +11,11 @@ export class QuoteDetailComponent implements OnInit {
 
   @Input()
   quote!: Quotes;
+  isComplete: any;
 
-  // quoteComplete(complete:boolean){
-  //   this.isComplete.emit(complete);
-  // }
+  quoteComplete(complete:boolean){
+    this.isComplete.emit(complete);
+  }
 
   constructor() { }
 

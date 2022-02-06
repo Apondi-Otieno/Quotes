@@ -12,8 +12,8 @@
         {{quote.name}}
         
     <button (click)="toggleDetails(i)"> Details </button>
-     <app-quote-detail *ngIf= 'quote.showDescription' [quote]= 'quote'></app-quote-detail>
-   
+     <app-quote-detail *ngIf= 'quote.showDescription' [quote]= 'quote'(isComplete)='completeQuote($event,i)'></app-quote-detail>
+  
      </ol>
     <p *ngif= "quote.length>10"> Your quotes are too long!</p>
 </ul>

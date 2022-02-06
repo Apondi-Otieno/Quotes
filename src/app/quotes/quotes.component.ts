@@ -32,11 +32,11 @@ export class QuotesComponent implements OnInit {
   }
 
   
-  // completeQuote(isComplete, index){
-  //   if (isComplete) {
-  //     this.quote.splice(index,1);
-  //   }
-  // }
+  completeQuote(isComplete: any, index: number){
+    if (isComplete) {
+      this.quote.splice(index,1);
+    }
+  }
 }
 
 
