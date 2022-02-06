@@ -29,6 +29,7 @@ export class QuotesComponent implements OnInit {
     new Quotes(12, 'I am so clever that sometimes I do not understand a single word of what I am saying', ' Oscar Wilde, The Happy Prince and Other Stories', new Date, 0, 0),
   ];
 
+
   toggleDetails(index: any) {
     this.quote[index].showDescription = !this.quote[index].showDescription;
   }
