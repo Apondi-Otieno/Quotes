@@ -10,9 +10,11 @@
 <ul>
     <ol >
         {{quote.name}}
-         <app-quote-detail [quote] = 'quote'></app-quote-detail>
-    </ol>
+        
     <button (click)="toggleDetails(i)"> Details </button>
+     <app-quote-detail *ngIf= 'quote.showDescription' [quote]= 'quote'></app-quote-detail>
+   
+     </ol>
     <p *ngif= "quote.length>10"> Your quotes are too long!</p>
 </ul>
 </div>
