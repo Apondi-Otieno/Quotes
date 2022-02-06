@@ -1,19 +1,18 @@
-
 <!-- bdd 
     ******* input and delete quotes
     ******* like or dislike a vote and see number 
-
 -->
 
 
-
-<div>
 <h2>Good quotes</h2>
+<div *ngFor='let quote of quote ; let i=index'>
+
 <ul>
-    <ol *ngFor='let quote of quote'>
+    <ol >
         {{quote.name}}
          <app-quote-detail [quote] = 'quote'></app-quote-detail>
     </ol>
+    <button (click)="toggleDetails(i)"> Details </button>
     <p *ngif= "quote.length>10"> Your quotes are too long!</p>
 </ul>
 </div>
