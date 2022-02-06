@@ -16,11 +16,13 @@
      <app-quote-detail *ngIf= 'quote.showDescription' [quote]= 'quote'(isComplete)='completeQuote($event,i)'></app-quote-detail>
   
      </ol>
+     <app-like></app-like>
     <p *ngif= "quote.length>10"> Your quotes are too long!</p>
 </ul>
 </div>
 </div>
 <div class="">
     <app-quote-form></app-quote-form>
+    
 </div>
 </div>
