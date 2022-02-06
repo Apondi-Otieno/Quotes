@@ -1,28 +1,27 @@
-<!-- bdd 
-    ******* input and delete quotes
-    ******* like or dislike a vote and see number 
--->
-
 <div class="container-fluid">
-<h2>Good quotes</h2>
-<div class="container">
-<div *ngFor='let quote of quote ; let i=index'>
+  <h2>Good quotes</h2>
+  <div class="container">
 
-<ul>
-    <ol >
-        {{quote.name}}
-        <br>
-    <button (click)="toggleDetails(i)"> Info. </button>
-     <app-quote-detail *ngIf= 'quote.showDescription' [quote]= 'quote'(isComplete)='completeQuote($event,i)'> </app-quote-detail>
-  
-     </ol>
-     <app-like></app-like>
-    <p *ngif= "quote.length>10"> Your quotes are too long!</p>
-</ul>
-</div>
-</div>
-<div class="">
+    <div *ngFor='let quote of quote ; let i=index'>
+
+      <ul>
+        <ol>
+          {{quote.name}}
+        </ol>
+        
+        <button (click)="toggleDetails(i)"> More Info. </button>
+
+        <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete)='completeQuote($event,i)'>
+        </app-quote-detail>
+        <app-like></app-like>
+
+
+        <p *ngif="quote.length>10"> Your quotes are too long!</p>
+      </ul>
+    </div>
+  </div>
+  <div class="">
     <app-quote-form></app-quote-form>
-    
-</div>
+
+  </div>
 </div>
