@@ -10,8 +10,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Live Link
 
 
-## Display
-
 
 ## Contact Information
 
@@ -19,5 +17,7 @@ Reach me on apondioti@gmail.com
 
 ## License
 
+MIT License
 
+Copyright (c) 2022 Apondi Otieno
 
